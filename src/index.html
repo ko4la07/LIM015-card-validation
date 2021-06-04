@@ -10,41 +10,39 @@
       <h1>FAST airlines</h1>
     </header>
     <main>
-      <section>
+      <div id="uno" style="display:block">
         <div>
           <h2>MIS DATOS</h2>
           <div>
-            <form action="index.html">
+            <form>
               <label for="name">Nombres y apellidos</label><br/>
               <input type="text" id="name" name="name">
             </form>
           </div>
           <div>
-            <form action="index.html" method="GET">
-              <label for="cardNumber">Ingresa el número de tu tarjeta</label> <br/>
+              <label for="cardNumber">Ingresa el número de tu tarjeta</label><br/>
               <input type="text" name="cardNumber" id="cardNumber" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16">
-              <button type="submit">Validar tarjeta</button>
-            </form>
+              <button type="submit" onclick="cambiadisplay('dos');">Validar tarjeta</button>
           </div>
         </div>
-      </section>
-      <section>
+      </div>
+      <div id="dos" style="display:none">
         <div>
           <h2>Tú tarjeta es válida!!!</h2>
           <h3><span id="card"></span></h3>
         </div>
         <div>
-          <button type="submit">Finalizar compra</button>
+          <button type="submit" onclick="cambiadisplay('tres');">Finalizar compra</button>
         </div>
-      </section>
-      <section>
+      </div>
+      <div id="tres" style="display:none">
         <h2>Tú compra fue exitosa!!!</h2>
         <p>Recuerda estar una hora antes para el embarque!!!</p>
-      </section>
+      </div>
     </main>
     <footer>
       <h1>Contacto</h1>
     </footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
   </body>
 </html>
