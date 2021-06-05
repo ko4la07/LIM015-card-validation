@@ -21,18 +21,18 @@
           </div>
           <div>
               <label for="cardNumber">Ingresa el número de tu tarjeta</label><br/>
-              <input type="text" name="cardNumber" id="cardNumber" onkeypress="return onlyNumbers(event)" maxlength="16">
-              <button type="submit" onclick="cambiadisplay('dos')">Validar tarjeta</button>
+              <input type="text" name="cardNumber" id="cardNumber" maxlength="16">
+              <button type="submit" id="btnValidacion">Validar tarjeta</button>
           </div>
         </div>
       </div>
       <div id="dos" style="display:none">
         <div>
-          <h2>Tú tarjeta es valida!!!</h2>
-          <h3><span id="card"></span></h3>
+          <h2 id="displayResultado"></h2>
+          <h3><span id="masked"></span></h3>
         </div>
         <div>
-          <button type="submit" onclick="cambiadisplay('tres');">Finalizar compra</button>
+          <button type="submit" id="btnFinalizar">Finalizar compra</button>
         </div>
       </div>
       <div id="tres" style="display:none">
@@ -43,6 +43,6 @@
     <footer>
       <h1>Contacto</h1>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

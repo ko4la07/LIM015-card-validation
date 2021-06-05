@@ -1,43 +1,40 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
-/* import validator from './validator.js'; */
+import validator from './validator.js';
 
-let cardNumber;
-let arr;
-let revArr;
+document.getElementById("btnValidacion").addEventListener('click', function(){
+  changeDisplay('dos');
+});
 
+document.getElementById("btnFinalizar").addEventListener('click', function(){
+  changeDisplay('tres');
+});
 
-/* window.cambiadisplay = function (id) {
-  cardNumber = document.getElementById("cardNumber").value;
-  arr = Array.from(cardNumber,x=>parseInt(x));
-  console.log(arr);
-  revArr = arr.reverse();
-   console.log(revArr);
-  console.log(cardNumber);
+document.getElementById("cardNumber").addEventListener('keypress', function(e){
+  onlyNumbers(e);
+});
 
-  if (id == "dos" && validator.isValid(revArr) == true) {
-    document.getElementById("uno").style.display = "none";
-    document.getElementById("dos").style.display = "block";
-    document.getElementById("tres").style.display = "none";
-  } else if (id == "tres") {
-    document.getElementById("uno").style.display = "none";
-    document.getElementById("dos").style.display = "none";
-    document.getElementById("tres").style.display = "block";
+function onlyNumbers(e) {
+  if(e.charCode >= 48 && e.charCode <= 57){
+    return true;
   }
-} */
+  e.preventDefault();
+  return false;
+}
 
+function changeDisplay(id) {
 
-function cambiadisplay(id) {
-  cardNumber = document.getElementById("cardNumber").value;
-  arr = Array.from(cardNumber,x=>parseInt(x));
-  console.log(arr);
-  revArr = arr.reverse();
-   console.log(revArr);
-  console.log(cardNumber);
+let cardNumber = document.getElementById("cardNumber").value;
+// console.log(cardNumber);
+let res = validator.isValid(cardNumber);
+// console.log(res);
+
+let masked = validator.maskify(cardNumber);
+// console.log(masked);
 
   if (id == "dos") {
     document.getElementById("uno").style.display = "none";
     document.getElementById("dos").style.display = "block";
+    document.getElementById("displayResultado").innerHTML = res ? "Tu tarjeta es válida!!!" : "Tu tarjeta no es válida";
+    document.getElementById("masked").innerHTML = masked;
     document.getElementById("tres").style.display = "none";
   } else if (id == "tres") {
     document.getElementById("uno").style.display = "none";
@@ -47,9 +44,6 @@ function cambiadisplay(id) {
 }
 
 
-function onlyNumbers(e) {
-  return e.charCode >= 48 && e.charCode <= 57;
-}
 
 
 
