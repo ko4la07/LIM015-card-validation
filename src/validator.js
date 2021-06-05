@@ -3,11 +3,11 @@ const validator = {
   isValid: function (cardNumber) {
     // cardNumber = document.getElementById("cardNumber").value;
     let cardNumberStr = cardNumber.toString();
-    let card = Array.from(cardNumberStr, x=>parseInt(x));
-    let tarjeta = card.reverse();
+    let cardArr = Array.from(cardNumberStr, x=>parseInt(x));
+    let cardArrRev = cardArr.reverse();
     let sum = 0;
-    for(let i=0; i < tarjeta.length; i++){
-      let intVal = tarjeta[i];
+    for(let i=0; i < cardArrRev.length; i++){
+      let intVal = cardArrRev[i];
       if(i % 2 != 0){
         intVal *= 2;
         if(intVal > 9){
@@ -24,7 +24,18 @@ const validator = {
     }
   },
   maskify: function (cardNumber){
-    return cardNumber.length
+    let cardNumberStr = cardNumber.toString();
+    let maskedNumbers = '';
+    let len = cardNumberStr.length;
+    if(len > 4){
+      let visibleNumbers = cardNumberStr.substring(len - 4, len);
+      for(let i=0; i < len - 4; i++){
+        maskedNumbers = maskedNumbers + "#";
+      }
+      return maskedNumbers + visibleNumbers;
+    } else{
+      return cardNumberStr;
+    }
   }
 };
 export default validator;
