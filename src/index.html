@@ -21,14 +21,14 @@
           </div>
           <div>
               <label for="cardNumber">Ingresa el número de tu tarjeta</label><br/>
-              <input type="text" name="cardNumber" id="cardNumber" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16">
-              <button type="submit" onclick="cambiadisplay('dos');">Validar tarjeta</button>
+              <input type="text" name="cardNumber" id="cardNumber" onkeypress="return onlyNumbers(event)" maxlength="16">
+              <button type="submit" onclick="cambiadisplay('dos')">Validar tarjeta</button>
           </div>
         </div>
       </div>
       <div id="dos" style="display:none">
         <div>
-          <h2>Tú tarjeta es válida!!!</h2>
+          <h2>Tú tarjeta es valida!!!</h2>
           <h3><span id="card"></span></h3>
         </div>
         <div>
@@ -43,6 +43,6 @@
     <footer>
       <h1>Contacto</h1>
     </footer>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
