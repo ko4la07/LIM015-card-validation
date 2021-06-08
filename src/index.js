@@ -1,5 +1,9 @@
 import validator from './validator.js';
 
+document.getElementById("btnDestAreq").addEventListener('click', function(){
+  changeDisplay('uno');
+});
+
 document.getElementById("btnValidacion").addEventListener('click', function(){
   changeDisplay('dos');
 });
@@ -30,13 +34,20 @@ let res = validator.isValid(cardNumber);
 let masked = validator.maskify(cardNumber);
 // console.log(masked);
 
-  if (id == "dos") {
+if (id == "uno") {
+  document.getElementById("cero").style.display = "none";
+  document.getElementById("uno").style.display = "block";
+  document.getElementById("dos").style.display = "none";
+  document.getElementById("tres").style.display = "none";
+} else if (id == "dos") {
+  document.getElementById("cero").style.display = "none";
     document.getElementById("uno").style.display = "none";
     document.getElementById("dos").style.display = "block";
     document.getElementById("displayResultado").innerHTML = res ? "Tu tarjeta es válida!!!" : "Tu tarjeta no es válida";
     document.getElementById("masked").innerHTML = masked;
     document.getElementById("tres").style.display = "none";
   } else if (id == "tres") {
+    document.getElementById("cero").style.display = "none";
     document.getElementById("uno").style.display = "none";
     document.getElementById("dos").style.display = "none";
     document.getElementById("tres").style.display = "block";

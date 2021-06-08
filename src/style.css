@@ -1,0 +1,638 @@
+body{
+    background-color: #EBF2FA;
+    margin: 0px;;
+}
+
+header{
+    background-color: #eceeea;
+    height: 15vh;
+    width: 100%;
+    padding: 0px;
+}
+
+#btnHome{
+    background-image: url(assets/img/logoFast.png);
+    width: 163px;
+    height: 85px;
+    background-size: cover;
+    background-position: center;
+    border: 1px #FFFFFF;
+    
+}
+
+
+.home{
+    background-image: url('assets/img/MachuPicchu.png');
+    background-size: cover;
+    background-position: center;
+    height: 58vh;
+    padding: 1px;
+}
+
+.lema{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#more{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 41px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    width: 173px;
+    height: 230px;
+    top: 30px;   
+}
+
+.busqueda{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #064789;
+    width: 173px;
+    height: 230px;
+    top: 148px;   
+}
+
+/* --------------Arequipa--------------- */
+
+.linkDest{
+    background-image: url(assets/img/Arequipa.jpg);
+    position: absolute;
+    height: 164px;
+    width: 283px;
+    left: 100px;
+    top: 480px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+.blueBox{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 100px;
+    top: 630px;
+    background-color: #427AA1;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+.whiteBox{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 100px;
+    top: 660px;
+    background-color: white;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.whiteBox:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+#landDest-comp-1, #landDest-comp-2, #landDest-comp-3{
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+#date{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-1{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-2{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    display: flex;
+    font-size: 14px;
+}
+
+#landDest-comp-3{
+    position: absolute;
+    font-size: 13px;
+    left: 48px;
+    top: 55px;
+    display: flex;
+}
+
+#btnDestAreq{
+    background-image: url(assets/img/baseline_chevron_right_white_24dp.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #427AA1;
+    border-radius: 45px;
+    width: 30px;
+    height: 30px;
+    border-color: #427AA1;
+    border: 1px solid #427AA1;
+    position: absolute;
+    left: 225px;
+    top: 52px;
+}
+
+#btnDestAreq:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* -----------Pucallpa ------------*/
+
+
+.linkDestPucal{
+    background-image: url(assets/img/pucallpa.png);
+    position: absolute;
+    height: 164px;
+    width: 283px;
+    left: 520px;
+    top: 480px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+.blueBox-Pucal{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 0px;
+    top: 149px;
+    background-color: #427AA1;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+#whiteBox-Pucal{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 0px;
+    top: 180px;
+    background-color: white;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+#whiteBox-Pucal:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+#landDest-comp-Pucal-1, #landDest-comp-Pucal-2, #landDest-comp-Pucal-3{
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+#datePucal{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-Pucal-1{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-Pucal-2{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    display: flex;
+    font-size: 14px;
+}
+
+#landDest-comp-Pucal-3{
+    position: absolute;
+    font-size: 13px;
+    left: 48px;
+    top: 55px;
+    display: flex;
+}
+
+#btnDestPucal{
+    background-image: url(assets/img/baseline_chevron_right_white_24dp.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #427AA1;
+    border-radius: 45px;
+    width: 30px;
+    height: 30px;
+    border-color: #427AA1;
+    border: 1px solid #427AA1;
+    position: absolute;
+    left: 225px;
+    top: 52px;
+}
+
+#btnDestPucal:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* ---------------Piura---------------------- */
+
+.linkDestPiura{
+    background-image: url(assets/img/piura.jpg);
+    position: absolute;
+    height: 164px;
+    width: 283px;
+    left: 920px;
+    top: 480px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+.blueBox-Piura{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 0px;
+    top: 149px;
+    background-color: #427AA1;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+#whiteBox-Piura{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 100;
+    height: 100px;
+    width: 283px;
+    left: 0px;
+    top: 180px;
+    background-color: white;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+#whiteBox-Piura:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+#landDest-comp-Piura-1, #landDest-comp-Piura-2, #landDest-comp-Piura-3{
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+#datePiura{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-Piura-1{
+    position: absolute;
+    font-size: 15px;
+    left: 23px;
+    top: 5px;
+    font-weight: 300;
+    display: flex;
+}
+
+#landDest-comp-Piura-2{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    display: flex;
+    font-size: 14px;
+}
+
+#landDest-comp-Piura-3{
+    position: absolute;
+    font-size: 13px;
+    left: 48px;
+    top: 55px;
+    display: flex;
+}
+
+#btnDestPiura{
+    background-image: url(assets/img/baseline_chevron_right_white_24dp.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #427AA1;
+    border-radius: 45px;
+    width: 30px;
+    height: 30px;
+    border-color: #427AA1;
+    border: 1px solid #427AA1;
+    position: absolute;
+    left: 225px;
+    top: 52px;
+}
+
+#btnDestPiura:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* ----------Elección Arequipa------------- */
+.destOne{
+    background-image: url('assets/img/Arequipa.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: soft-light;
+    height: 31vh;
+    padding: 1px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.boxInformacion{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 558px;
+    height: 391px;
+    left: 165px;
+    top: 345px;
+
+    background: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+}
+
+main {
+    min-height: calc(750px - 50px);
+}
+footer {
+    height: 230px;
+    background-color: #427AA1;
+    width: 100%;
+    display: flex;
+}
+
+.infoFooter{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    width: 255px;
+    height: 51px;
+    left: 75px;
+    top: 800px;
+}
+
+.boxTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 100;
+    color: #064789;
+    position: absolute;
+    width: 255px;
+    height: 51px;
+    left: 75px;
+    top: 5px;
+
+}
+
+.namesTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+    position: absolute;
+    width: 255px;
+    height: 51px;
+    left: 75px;
+    top: 120px;
+
+}
+
+.cardTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+    position: absolute;
+    width: 300px;
+    height: 51px;
+    left: 75px;
+    top: 200px;
+
+}
+
+#name{
+    position: absolute;
+    width: 400px;
+    height: 27px;;
+    left: 75px;
+    top: 155px;
+    border-radius: 15px;
+    border: 1px solid #427AA1;
+    background: #EBF2FA;
+}
+
+#cardNumber{
+    position: absolute;
+    width: 400px;
+    height: 27px;;
+    left: 75px;
+    top: 240px;
+    border-radius: 15px;
+    border: 1px solid #427AA1;
+    background: #EBF2FA;
+}
+
+#btnValidacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 330px;
+    top: 300px;
+    /* text-align: left; */
+    background: #064789;
+    border: 2px solid #064789;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#displayResultado{
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    font-weight: 100;
+    color: #064789;
+    position: absolute;
+    width: 280px;
+    height: 51px;
+    left: 130px;
+    top: 40px;
+}
+
+#masked{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+    position: absolute;
+    width: 280px;
+    height: 51px;
+    left: 180px;
+    top: 130px;
+}
+
+#btnFinalizar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 175px;
+    top: 200px;
+    /* text-align: left; */
+    background: #064789;
+    border: 2px solid #064789;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.destEnd{
+    
+    background-color: #064789;
+    height: 47px;
+    padding: 1px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.boxEnd{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 558px;
+    height: 391px;
+    left: 320px;
+    top: 280px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+#resultBuy{
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    font-weight: 100;
+    color: #064789;
+    position: absolute;
+    width: 350px;
+    height: 51px;
+    left: 130px;
+    top: 40px;
+}
+
+.ida{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    width: 280px;
+    height: 51px;
+    left: 140px;
+    top: 105px;
+}
+
+.vuelta{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    width: 280px;
+    height: 51px;
+    left: 140px;
+    top: 165px;
+}
+
+#comment{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    color: #064789;
+    position: absolute;
+    width: 350px;
+    height: 51px;
+    left: 110px;
+    top: 230px;
+}
