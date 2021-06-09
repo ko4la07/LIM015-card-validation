@@ -4,7 +4,8 @@ body{
 }
 
 header{
-    background-color: #eceeea;
+    /* background-color: #eceeea; */
+    background-color: white;
     height: 15vh;
     width: 100%;
     padding: 0px;
@@ -408,6 +409,16 @@ header{
     background-position: center;
 }
 
+#destOneLema{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 80px;
+    top: 77px;
+    text-align: center;
+
+}
+
 .boxInformacion{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -546,6 +557,23 @@ footer {
 }
 
 #btnFinalizar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 175px;
+    top: 200px;
+    /* text-align: left; */
+    background: #064789;
+    border: 2px solid #064789;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#btnRegresarValidacion{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 100;
