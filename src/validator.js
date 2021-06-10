@@ -1,4 +1,4 @@
-// import {revArr} from './index'
+
 const validator = {
   isValid: function (cardNumber) {
     // cardNumber = document.getElementById("cardNumber").value;
