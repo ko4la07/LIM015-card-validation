@@ -42,9 +42,9 @@ Para hacer el prototipado utilice Figma. A continuación dejo el enlace Figma do
 * [ ] Lectura sobre el algoritmo de Luhn.
 * [ ] Hacer que el input solo admita números.
 * [ ] Implementar el algoritmo de Luhn, función isValid.
-      *	Colocar los números ingresados en un array e invertir el orden del array.
-      *	Multiplicar los números de las posiciones pares por 2 y si el resultado es >= 10 sumar sus cifras, sumar todos los elementos resultantes.
-      *	Mostrar si la tarjeta es válida o no válida con condicionales.
+*	Colocar los números ingresados en un array e invertir el orden del array.
+*	Multiplicar los números de las posiciones pares por 2 y si el resultado es >= 10 sumar sus cifras, sumar todos los elementos resultantes.
+*	Mostrar si la tarjeta es válida o no válida con condicionales.
 * [ ] Ocultar los dígitos de la tarjeta excepto los últimos 4, función maskify.
 * [ ] Mostrar los resultados obtenidos con isValide y maskify en las páginas.
 * [ ] Colocar los diseños de las cajas con CSS, colocar las imágenes.
