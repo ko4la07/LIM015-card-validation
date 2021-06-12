@@ -36,6 +36,18 @@ const validator = {
     } else{
       return cardNumberStr;
     }
-  }
+  },
+  getIssuer: function(cardNumber){
+    if (parseInt(cardNumber.substring(0,1)) === 4 && 13<= cardNumber.length && cardNumber.length <=16) {
+      // document.getElementById('franquicia-1').innerHTML= 'visa';
+      return 'VISA';
+    } else if ((parseInt(cardNumber.substring(0,2))=== 34 || parseInt(cardNumber.substring(0,2))=== 37) && cardNumber.length==15){
+      // document.getElementById('franquicia-2').innerHTML= 'American Express';
+      return 'American Express'
+    } else if (50 < parseInt(cardNumber.substring(0,2)) && parseInt(cardNumber.substring(0,2)) < 56 && cardNumber.length==16){
+      // document.getElementById('franquicia-3').innerHTML= 'MasterCard';
+      return 'MasterCard';
+    }
+  } 
 };
 export default validator;

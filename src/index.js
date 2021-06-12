@@ -61,6 +61,8 @@ let res = validator.isValid(cardNumber);
 let masked = validator.maskify(cardNumber);
 // console.log(masked);
 
+let franquicia = validator.getIssuer(cardNumber);
+
 if (id == "cero") {
   document.getElementById("cero").style.display = "block";
   document.getElementById("uno").style.display = "none";
@@ -78,7 +80,24 @@ if (id == "cero") {
     document.getElementById("dos").style.display = "block";
     document.getElementById("displayResultado").innerHTML = res ? "Tu tarjeta es válida!!!" : "Tu tarjeta no es válida";
     document.getElementById("masked").innerHTML = masked;
+    // document.getElementById("franquicia").innerHTML=franquicia;
+    //-----------
+    if(franquicia==='VISA'){
+      document.getElementById("franquicia-1").style.display ="block";
+      document.getElementById("franquicia-2").style.display ="none";
+      document.getElementById("franquicia-3").style.display ="none";
+    } else if(franquicia==='American Express'){
+      document.getElementById("franquicia-1").style.display ="none";
+      document.getElementById("franquicia-2").style.display ="block";
+      document.getElementById("franquicia-3").style.display ="none";
+    }else if(franquicia==='MasterCard'){
+      document.getElementById("franquicia-1").style.display ="none";
+      document.getElementById("franquicia-2").style.display ="none";
+      document.getElementById("franquicia-3").style.display ="block";
+    }
+    //------------
     document.getElementById("tres").style.display = "none";
+
     
     if (res == true) {
       document.getElementById("dos-btnFinalizar").style.display="block";

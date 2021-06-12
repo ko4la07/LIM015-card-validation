@@ -71,6 +71,38 @@ header{
     top: 148px;   
 }
 
+/* ------------Franquicia---------- */
+#franquicia-1{
+    background-image: url(assets/img/visa.png);
+    background-size: cover;
+    position: absolute;
+    width: 55px;
+    height: 18px;
+    top: 132px;  
+    left: 145px;
+}
+
+#franquicia-2{
+    background-image: url(assets/img/American_Express.png);
+    background-size: cover;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 125px;  
+    left: 160px;
+}
+
+#franquicia-3{
+    background-image: url(assets/img/MasterCard.png);
+    background-size: cover;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 126px;  
+    left: 150px;
+}
+
+
 /* --------------Arequipa--------------- */
 
 .linkDest{
@@ -494,25 +526,33 @@ footer {
 }
 
 #name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     position: absolute;
     width: 400px;
     height: 27px;;
     left: 75px;
     top: 155px;
     border-radius: 15px;
+    outline: none;
     border: 1px solid #427AA1;
-    background: #EBF2FA;
+    /* background: #EBF2FA; */
 }
 
 #cardNumber{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     position: absolute;
     width: 400px;
     height: 27px;;
     left: 75px;
     top: 240px;
     border-radius: 15px;
+    outline: none;
     border: 1px solid #427AA1;
-    background: #EBF2FA;
+    /* background: #EBF2FA; */
 }
 
 #btnValidacion{
@@ -552,7 +592,7 @@ footer {
     position: absolute;
     width: 280px;
     height: 51px;
-    left: 180px;
+    left: 210px;
     top: 130px;
 }
 
@@ -629,9 +669,9 @@ footer {
 .ida{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
-    color: #000;
+    color: #064789;
     position: absolute;
     width: 280px;
     height: 51px;
@@ -642,9 +682,9 @@ footer {
 .vuelta{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
-    color: #000;
+    color: #064789;
     position: absolute;
     width: 280px;
     height: 51px;
@@ -663,4 +703,179 @@ footer {
     height: 51px;
     left: 110px;
     top: 230px;
+}
+
+.infoFly{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 820px;
+    top: 350px;
+    background-color: #427AA1;
+    border-radius: 15px;
+}
+/* ------------------- */
+#infoFly-ida{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 52px;
+    top: 33px;
+    background-color: #064789;
+    border-radius: 15px;
+    /* background-blend-mode: overlay; */
+    /* text-align: left; */
+}
+
+#hourFly-ida{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 110px;
+    top: 33px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+#dateFly-lim{
+    font-weight: 300;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 130px;
+    top: 29px;
+}
+#hourFly-ida-lim{
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 150px;
+    top: 40px;
+}
+
+#infoFly-ida-text{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    top: 33px;
+}
+/* ------------------ */
+
+#infoFly-vuelta{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 52px;
+    top: 110px;
+    background-color: #064789;
+    border-radius: 15px;
+    /* background-blend-mode: overlay; */
+    /* text-align: left; */
+}
+
+#hourFly-vuelta{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 110px;
+    top: 110px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+#dateFly-areq{
+    font-weight: 300;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 130px;
+    top: 106px;
+}
+#hourFly-vuelta-areq{
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 150px;
+    top: 117px;
+}
+
+#infoFly-vuelta-text{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    top: 110px;
+}
+/* -------------- */
+.cost{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #064789;
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    left: 860px;
+    top: 600px;
+    background-color: #427AA1;
+    border-radius: 15px;
+}
+
+#cost-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 30px;
+    top: 18px;
+}
+#cost-price{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 140px;
+    top: 25px;
 }
