@@ -462,7 +462,7 @@ header{
     top: 345px;
 
     background: #FFFFFF;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px;
 }
 
 main {
@@ -580,7 +580,7 @@ footer {
     position: absolute;
     width: 280px;
     height: 51px;
-    left: 130px;
+    left: 135px;
     top: 40px;
 }
 
@@ -878,4 +878,8 @@ footer {
     height: 50px;
     left: 140px;
     top: 25px;
+}
+
+.flex-container{
+    display: flex;
 }
