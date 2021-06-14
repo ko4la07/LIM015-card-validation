@@ -1,7 +1,6 @@
 
 const validator = {
   isValid: function (cardNumber) {
-    // let cardNumberStr = cardNumber.toString();
     let cardArr = Array.from(cardNumber, x=>parseInt(x));
     let cardArrRev = cardArr.reverse();
     let sum = 0;
@@ -23,7 +22,6 @@ const validator = {
     }
   },
   maskify: function (cardNumber){
-    // let cardNumberStr = cardNumber.toString();
     let maskedNumbers = '';
     let len = cardNumber.length;
     if(len > 4){
